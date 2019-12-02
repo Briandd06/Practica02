@@ -5,6 +5,8 @@
  */
 package vector;
 
+import java.util.Scanner;
+
 /**
  *
  * @author PC
@@ -15,7 +17,23 @@ public class Vector {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        int i;
+        int[] numeros = new int[10];
+
+        Scanner teclado = new Scanner(System.in);
+
+        for(i=0; i<numeros.length; i++)
+        {
+            System.out.printf("Introduzca número %d: ", i+1);
+            numeros[i] = teclado.nextInt();
+        }
+        for(i=0; i<numeros.length; i++)
+        {
+            System.out.println(numeros[i]);
+        }  	
+		
+    
+                
+    }    
     
 }
